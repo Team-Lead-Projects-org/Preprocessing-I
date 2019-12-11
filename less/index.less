@@ -4,56 +4,253 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
 }
 
+.container {
+  margin: 3% 7% 0 7%;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60%;
+}
+
+.hero {
+  background-color: rgba(198, 215, 226, 0.548);
+  margin-top: 3%;
+  padding: 6% 3%;
+  img {
+    width: 35%;
+  }
+  .top-heading {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h6 {
+      font-size: 1.5rem;
+      margin-bottom: 2%;
+    }
+    p {
+      margin-bottom: 3%;
+    }
+    a {
+      margin-top: 7%;
+      text-decoration: none;
+      color: white;
+      background-color: rgba(95, 100, 102, 0.788);
+      padding: 5px 15px;
+      border-radius: 3px;
+    }
+  }
+}
+.middle-content {
+  padding-top: 3%;
+  display: flex;
+  .middle-text {
+    width: 50%;
+    h3 {
+      font-size: 1.76rem;
+    }
+  }
+  .middle-list {
+    margin-top: 1%;
+    padding-left: 5%;
+    width: 50%;
+    h3 {
+      font-size: 1.3rem;
+    }
+    ul {
+      line-height: 2.5;
+      padding-left: 5%;
+    }
+    li {
+      padding-left: 5%;
+      border: 1px solid rgba(153, 147, 147, 0.384);
+    }
+    li:nth-child(1) {
+      border-bottom: none;
+    }
+    li:nth-child(2) {
+      border-bottom: none;
+    }
+    li:nth-child(3) {
+      border-bottom: none;
+    }
+  }
+}
+.history {
+  padding-top: 3%;
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  .grid {
+    padding: 1%;
+    border-top: 1px solid gray;
+
+    display: flex;
+    .col-1-header {
+      width: 12%;
+    }
+    .col-2-header {
+      width: 25%;
+    }
+    .col-3-header {
+      width: 35%;
+    }
+    .col-3-header {
+      width: 30%;
+    }
+  }
+  .grid:nth-child(3) {
+    background-color: rgba(198, 215, 226, 0.548);
+  }
+  .grid:nth-child(5) {
+    background-color: rgba(198, 215, 226, 0.548);
+  }
+}
+footer {
+  padding: 15px 0 30px 0;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 3%;
+  background-color: rgba(95, 100, 102, 0.788);
+  color: white;
+}
